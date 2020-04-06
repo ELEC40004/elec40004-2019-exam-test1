@@ -19,16 +19,18 @@ Each instruction consists of a 4-bit op-code,
 plus a 12-bit operand-address. The instruction
 op-codes defined for MU0 are:
 
-| 0 | 0000 | LDA S | ACC = memory[S]                           |
-| 1 | 0001 | STA S | memory[S] = ACC                           |
-| 2 | 0010 | ADD S | ACC = ACC + memory[S]                     |
-| 3 | 0011 | SUB S | ACC = ACC - memory[S]                     |
-| 4 | 0100 | JMP S | PC = S                                    |
-| 5 | 0101 | JGE S | if ACC >= 0 then PC = S                   |
-| 6 | 0110 | JNE S | if ACC != 0 then PC = S                   |
-| 7 | 0111 | STP   | halt the program                          |
-| 8 | 1000 | INP   | ACC=mu0_input()                           |
-| 9 | 1001 | OUT   | mu0_output(ACC)                           |
+| Dec | Bin  | ASM   | Operation                                 |
+|-----|------|-------|-------------------------------------------|
+| 0   | 0000 | LDA S | ACC = memory[S]                           |
+| 1   | 0001 | STA S | memory[S] = ACC                           |
+| 2   | 0010 | ADD S | ACC = ACC + memory[S]                     |
+| 3   | 0011 | SUB S | ACC = ACC - memory[S]                     |
+| 4   | 0100 | JMP S | PC = S                                    |
+| 5   | 0101 | JGE S | if ACC >= 0 then PC = S                   |
+| 6   | 0110 | JNE S | if ACC != 0 then PC = S                   |
+| 7   | 0111 | STP   | halt the program                          |
+| 8   | 1000 | INP   | ACC=mu0_input()                           |
+| 9   | 1001 | OUT   | mu0_output(ACC)                           |
 
 Unless otherwise specified, the PC always advances by 1.
 
