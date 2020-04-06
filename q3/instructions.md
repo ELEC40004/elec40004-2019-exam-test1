@@ -84,12 +84,14 @@ is required between all components, and there is no error checking during parsin
 
 Examples of the series syntax are:
 
-| `1.5`                        | $1.5$ |
-| `x`                          | $x$  |
-| `( * 3 x )`                  | $3 x$  |
-| `( + ( * 3 x ) x )`          | $(3 x) + x$  |
-| `( * x ( sin x ) )`          | $x sin(x)$  |
-| `( * 3 ( sin x ) )`          | $3 sin(x)$  |
+|  Mini-language               | Mathematical      |
+----------------------------------------------------
+| `1.5`                        | $1.5$             |
+| `x`                          | $x$               |
+| `( * 3 x )`                  | $3 x$             |
+| `( + ( * 3 x ) x )`          | $(3 x) + x$       |
+| `( * x ( sin x ) )`          | $x sin(x)$        |
+| `( * 3 ( sin x ) )`          | $3 sin(x)$        |
 | `( + ( cos x ) ( sin x ) )`  | $cos(x) sin(x) $  |
 
 The parser relies on the function `series_factory` to create instances
@@ -135,7 +137,7 @@ The first row printed should be for $n=0$, with the last
 printed for $n=n^{max}$. In total $n^{max}+1$ rows should be
 printed.
 
-The default printing precision of `cout` is acceptable.
+The default printing precision of `cout` is sufficient.
 
 ### T1.3 - Implement evaluate_to_tolerance 
 
@@ -199,7 +201,8 @@ Implement the function `series_integral`.
 
 Create a program `definite_integration.cpp` which
 receives a series on `stdin`, and prints a numerical
-estimate of the definite integral over the range $[a,b]$.
+estimate of the definite integral over the range $[a,b]$
+to `stdout`.
 
 The program should take three required command-line parameters:
 
