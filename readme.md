@@ -16,15 +16,21 @@ In your final commit you should check exactly two of these
 check-boxes to indicate which questions your have decided
 to answer:
 
-[ ] - Question 1
-[ ] - Question 2
-[ ] - Question 3
+- [ ] : Question 1
+- [ ] : Question 2
+- [ ] : Question 3
 
 If you do not tick enough boxes, or tick too many, then
 Q1 and Q2 will be marked by default.
 
 Note that you are welcome to try all three questions, but
 you must select just two for assessment.
+
+Checking a checkbox just means putting an `x` in it, for
+example:
+
+- [x] : Selected
+- [ ] : Not selectd.
 
 Errors in the Exam
 ==================
