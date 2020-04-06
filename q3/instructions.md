@@ -85,7 +85,7 @@ is required between all components, and there is no error checking during parsin
 Examples of the series syntax are:
 
 |  Mini-language               | Mathematical      |
-----------------------------------------------------
+|------------------------------|-------------------|
 | `1.5`                        | $1.5$             |
 | `x`                          | $x$               |
 | `( * 3 x )`                  | $3 x$             |
